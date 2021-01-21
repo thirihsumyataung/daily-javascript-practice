@@ -1,0 +1,33 @@
+<html> 
+    <head> 
+        <title>html2</title>
+        <link rel = "stylesheet" href = "index.css" > 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    </head>
+ 
+    <body> 
+        <input id ="datePick" type="date">
+    
+        <form id = "f1"> 
+            <h1>Celsius to Farenheit: </h1>
+            <p>Celsius: <input id = "input" type = "text" onkeyup = "myFunction()" > </p>
+            <p> Result is: <span id = "output"> </span></p>
+            <script src = "./index.js"></script>
+        </form>
+        
+        <script>
+            $(document).ready( function() {
+           var now = new Date();
+ 
+        var day = ("0" + now.getDate()).slice(-2);
+        var month = ("0" + (now.getMonth() + 1)).slice(-2);
+
+        var today = now.getFullYear()+"-"+(month)+"-"+(day) ;
+
+
+         $('#datePicker').val(today);
+          });
+        </script>
+    </body>
+</html>
