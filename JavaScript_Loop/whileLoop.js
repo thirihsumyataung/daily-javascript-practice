@@ -6,3 +6,12 @@ do{
 }while( x < 15)
 
 console.log("Here is value of x After ** do --- while ** loop: " + x); 
+
+//while -- loop
+
+var loading = 0; 
+
+while ( loading < 10 ){
+     loading ++; 
+     console.log("Website is loading...." + "Loading (" + loading+") time."); 
+}
