@@ -1,0 +1,40 @@
+<html> 
+    <head><title> JavaScript Load  </title> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+     
+    <style> 
+        #slidedown, #printing {
+          padding: 5px;
+          font-size: 18px;
+          text-align: center;
+          background-color: #555;
+          color: white;
+          border: solid 1px #666;
+          border-radius: 3px;
+        }
+        
+        #printing {
+          padding: 50px;
+          display: none;
+        }
+        </style> 
+    
+</head>
+<body>
+    
+    <button id="stop"> Stop </button>
+    <div id ="slidedown" > Click to change the content.</div>
+    <div id ="printing"> Hello, this sentence is printint from jQuery. </div>
+    <script> 
+    $(document).ready(function(){
+        $("#slidedown").click(function(){
+          $("#printing").slideDown(5000);  
+        });
+        $("#stop").click(function(){
+            $("#printing").stop(); 
+        });
+    });
+    </script>
+</body>
+</html>

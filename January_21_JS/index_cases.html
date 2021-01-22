@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice1</title>
+        <link rel = "stylesheet" href = "index_cases.css" >
+    </head>
+<body>
+
+<form id="f1">
+  Letters To change Upper Case:  <input type="text" id="fname" placeholder="text here">
+  Convert to upper case<input type="radio" onclick="if(this.checked){myFunction()}">
+
+  <br><br>Letters To change Lower Case:  <input type="text" id="fname3" placeholder="text here">
+  Convert to Lower case<input type="radio" onclick="if(this.checked){myFunction2()}">
+
+  <br> <br> Reverse Input: <input type="text" id="fname2" placeholder="text here">
+  To reverse the input<input type="radio" onclick="myReverseFunction()">
+
+
+</form>
+
+<form id ="f2">
+ Do you want to submit your form ? <br> 
+ <input type = "radio" name="answer" id ="yes"> Yes <br> 
+ <input type ="radio" name = "answer" id="no"> No</br> 
+<button onclick ="check_yes()"> Submit </button>
+<button onclick ="check_no()">Cancel</button>
+<p id="write"></p>
+</form>
+
+
+<script>
+function check_yes(){
+  document.getElementById("yes").checked = true;
+  document.getElementById("write").innerHTML = "you submitted"; 
+}
+
+function check_no(){
+  document.getElementById("no").checked = false;
+}
+function myFunction() {
+  document.getElementById("fname").value = document.getElementById("fname").value.toUpperCase();
+}
+
+function myFunction2() {
+  document.getElementById("fname3").value = document.getElementById("fname3").value.toLowerCase();
+}
+
+String.prototype.reverse = function() {
+  return this.split('').reverse().join('');
+};
+
+function myReverseFunction() {
+  var field = document.getElementById('fname2');
+  var ciao = field.value.reverse();
+   document.getElementById("fname2").value = ciao; 
+ // document.body.insertAdjacentText('beforeend', ciao);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+body{
+    padding-left: 100px; 
+    padding-top: 20px;
+   
+    background-color: #708685
+}
+#f1{
+    width: 600px; 
+    padding: 10px; 
+    border: 5px solid #2E1885; 
+    margin: 0px; 
+    background-color: #9391ff;
+}
+#f2{
+    width: 600px; 
+    padding: 10px; 
+    border: 5px solid #2E1885; 
+    margin-top: 10px; 
+    background-color: #9391ff;
+}
+
+footer{
+    text-align: center;
+    padding: 3px; 
+    font-size: 15px;
+    color: #100110; 
+}

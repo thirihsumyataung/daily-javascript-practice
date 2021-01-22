@@ -1,0 +1,19 @@
+<html> 
+    <head><title> JavaScript Load  </title> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+     <script> 
+    $(document).ready(function(){
+        $("button").click(function(){
+          $("#div1").load("load_textfile_practice.txt"); 
+        });
+    });
+    </script>
+    
+</head>
+<body>
+    <div id ="div1" ><h2> Let JQuery AJAX change this test </h2>
+    </div>
+    <button>Lets Change the content. </button>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form>
+  First Name: <input type="text" id="fname" value="Donald">
+  Convert to upper case
+  <input type="radio" onclick="if(this.checked){myFunction()}">
+  <br>  Reverse Input: <input type="text" id="fname2" value="Donald2">
+  <p>To reverse the input<input type="radio" onclick="myReverseFunction()">
+</form>
+
+<script>
+function myFunction() {
+  document.getElementById("fname").value = document.getElementById("fname").value.toUpperCase();
+}
+
+
+String.prototype.reverse = function() {
+  return this.split('').reverse().join('');
+};
+
+function myReverseFunction() {
+  var field = document.getElementById('fname2');
+  var ciao = field.value.reverse();
+   document.getElementById("fname2").value = ciao; 
+ // document.body.insertAdjacentText('beforeend', ciao);
+}
+</script>
+
+</body>
+</html>
