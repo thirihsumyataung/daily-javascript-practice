@@ -12,5 +12,3 @@ function square(number){
 console.log (greet('Nina', 'Wu')); 
 console.log (square(9)); 
 
-var username = prompt ('What is your username'); 
-console.log(username); 

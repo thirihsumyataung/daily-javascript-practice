@@ -1,0 +1,27 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<form> 
+    <input type="text" name ="item"> 
+</form>
+
+<div> 
+    <button id="btn"> Add </button>
+</div>
+
+<div class ="inputList"></div>
+
+<script >
+    $(document).ready(function(){
+    $('#btn').click(function(){
+        var userInputAdded = $('input[name=item]').val(); 
+        $('.inputList').append("<div class='custom'>" + "<input type='radio'>"+ userInputAdded +"</input>"+ "</div>");  
+    }); 
+}); 
+</script>
+
+</body>
+</html>

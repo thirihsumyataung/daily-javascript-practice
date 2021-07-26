@@ -1,0 +1,53 @@
+<html> 
+    <head>
+        <title>Calculation</title>
+        
+        
+        <link rel = "stylesheet" href = "calculation.css" > 
+    </head>
+ 
+    <body> 
+        <form id = "form1">
+           Movie Name: <input type="text" id ="movie"> 
+           
+        
+          
+        <br><br>
+         <label for="cinema">Choose Cinema:</label>
+
+         <select id="cinema">
+            <option value="Rio">Rio</option>
+            <option value ="Rio: DC">DC</option>
+            <option value ="AMC: Potomac">AMC: Potomac</option>
+            <option value= "AMC: OutLet">AMC: Outlet</option>
+         </select>
+       
+           <br> <br> Ticket:  <input type= "text" id = "ticket"> 
+
+
+           <br> <br>  <button id ="submit" onclick="myFunction(event)"> Submit </button>
+
+           <p id ="order"> </p>
+
+           
+        </form>
+
+        <form id = "form1"> 
+            <input type="number" value="2" id='num1'>
+<select id="operation">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+                <option>%</option>
+            </select>
+<input type="number" value="2" id='num2'> =
+<span id='result'></span><br>
+<input id="button1" type="button" value="Do It!">
+        </form>
+            <p id = "display"></p>
+        <script src="calculation.js"></script>
+
+        <button onclick="window.print()"> Print Your Ticket. </button>
+    </body>
+</html>

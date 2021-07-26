@@ -8,26 +8,21 @@
     </head>
  
     <body> 
-        
-        
-        <p> Today Date: <input id="todayDate" type ="date"></input>  </p>
-        <a href = "celsius_to_farenheit.html"> Click here </a>
         <h1> &#129505 JavaScript Practice  </h1>
         <form id = "f1"> 
-            <h1>Celsius to Farenheit: </h1>
-            <p>Celsius: <input id = "input" type = "text" onkeyup = "myFunction()" > </p>
-            <p> Result is: <span id = "output"> </span>
+           City: <input id = "city" type ="text"/>  
+           <br>State: <input id = "state" type = "text"/> 
+            <br>Ticket: <input id = "tickets" type = "text"/> 
+            <input id="button" value = "save" onclick="insert()"/>
+            <input id ="button" value="Show data" onclick="show()"/>
 
-               
-            </p>
-            <p> <span id = "outputCondition"> </span></p>
-            <script src = "./index.js"></script>
+             
         </form>
 
-        
-         <script src = "./index2.js"></script>
       
-
+        <div id ="display"></div>
+        
+      <script src = "./index_array.js"></script>
        <footer font-size = "10px" text-align = "center"> &#9753 Made with Love. &#10087</footer>
        <footer> &#128140 <a href="mailto:thirihsumyataung@aol.com">github_user@aol.com</a></footer>
       
